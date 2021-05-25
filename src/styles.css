@@ -1,0 +1,63 @@
+.background {
+  background-image: url(background_gradient.png);
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  overflow: hidden;
+  position: relative;
+}
+
+.background-buildings {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+#mid-building-img {
+  top: -100vh;
+}
+
+#front-building-img {
+  top: -200vh;
+}
+
+#tracks-img {
+  position: relative;
+  top: -300vh;
+  width: 100vw;
+  height: 100vh;
+}
+
+.train-title {
+  bottom: -10%;
+  position: absolute;
+  animation: linear infinite;
+  animation-name: drive;
+  animation-duration: 30s;
+  overflow: hidden;
+}
+
+@keyframes drive {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+#title {
+  position: relative;
+  top: -20vh;
+  font-family: "Bebas Neue", cursive;
+  filter: drop-shadow(0 0 0.75rem #ffc107);
+  font-size: 4rem;
+  padding: 1rem;
+  letter-spacing: 0.5rem;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
