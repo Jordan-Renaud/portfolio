@@ -30,7 +30,7 @@
 }
 
 .train-title {
-  bottom: -10%;
+  bottom: -10vh;
   position: absolute;
   animation: linear infinite;
   animation-name: drive;
@@ -51,7 +51,7 @@
   position: relative;
   top: -20vh;
   font-family: "Bebas Neue", cursive;
-  filter: drop-shadow(0 0 0.75rem #ffc107);
+  filter: drop-shadow(0 0 0.75rem #fff6da);
   font-size: 4rem;
   padding: 1rem;
   letter-spacing: 0.5rem;
@@ -60,4 +60,43 @@
 
 body {
   margin: 0;
+}
+
+#projects {
+  background-color: #373b7e;
+}
+
+#projects h2 {
+  margin: 0;
+  padding: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  font-family: "Bebas Neue", cursive;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 45vh;
+  width: 100vw;
+}
+
+.project {
+  width: 15vw;
+  height: 8vw;
+  background-color: #696c9a;
+  box-shadow: 1rem -1rem #070b34, 1rem 0 #070b34;
+}
+
+.project-img {
+  width: 15vw;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-img:hover {
+  filter: invert(1);
+  transform: scale(0.9);
 }
