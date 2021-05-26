@@ -4,16 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google font load in -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
     <title>Jordan Renaud Developer</title>
+
+    <!-- scroll magic setup -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
   </head>
   <body>
     <section class="background" id="welcome-section">
-      <header>
+      <header id="trigger">
         <nav id="navbar">
           <div class="closed" id="menu">
             <a href="#projects">Projects</a>
@@ -22,24 +31,26 @@
           <input type="image" id="menu-button" src="src/menu_bar.png" />
         </nav>
       </header>
-      <img
-        id="back-building-img"
-        class="background-buildings"
-        src="src/back_buildings_and_reflection.png"
-        alt=""
-      />
-      <img
-        id="mid-building-img"
-        class="background-buildings"
-        src="src/mid_buildings_and_reflection.png"
-        alt=""
-      />
-      <img
-        id="front-building-img"
-        class="background-buildings"
-        src="src/front_buildings_and_reflection.png"
-        alt=""
-      />
+      <div class="parallax-background">
+        <img
+          id="back-building-img"
+          class="background-buildings"
+          src="src/back_buildings_and_reflection.png"
+          alt=""
+        />
+        <img
+          id="mid-building-img"
+          class="background-buildings"
+          src="src/mid_buildings_and_reflection.png"
+          alt=""
+        />
+        <img
+          id="front-building-img"
+          class="background-buildings"
+          src="src/front_buildings_and_reflection.png"
+          alt=""
+        />
+      </div>
       <img id="tracks-img" src="src/tracks.png" alt="" />
       <div class="train-title">
         <img id="train" src="src/train.png" alt="" />
