@@ -1,3 +1,43 @@
+#navbar {
+  height: 1.5rem;
+  width: 100vw;
+  position: fixed;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 99;
+  padding: 0.5rem;
+}
+
+#navbar a {
+  font-family: "Bebas Neue", cursive;
+  color: #fff6da;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding-left: 0.5rem;
+  padding-right: 0.1rem;
+  margin-right: 0.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+#navbar a:hover {
+  font-size: 1.3rem;
+  box-shadow: 0.2rem -0.2rem #373b7e, 0.2rem 0 #373b7e;
+}
+
+#navbar input {
+  height: 1.5rem;
+}
+
+.closed {
+  display: none;
+}
+
+.open {
+  display: inline;
+}
+
 .background {
   background-image: url(background_gradient.png);
   width: 100vw;
@@ -15,7 +55,12 @@
 }
 
 #mid-building-img {
+  filter: blur(0.5px);
   top: -100vh;
+}
+
+#back-building-img {
+  filter: blur(1px);
 }
 
 #front-building-img {
