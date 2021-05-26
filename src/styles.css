@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #navbar {
   height: 1.5rem;
   width: 100vw;
@@ -36,6 +40,47 @@
 
 .open {
   display: inline;
+}
+
+.stars {
+  position: absolute;
+}
+
+.stars img {
+  position: absolute;
+  width: 100vw;
+  height: 44vh;
+}
+
+.star {
+  animation: linear infinite;
+  animation-name: twinkle;
+}
+
+#star-1 {
+  animation-duration: 3s;
+}
+
+#star-2 {
+  animation-duration: 2s;
+}
+#star-3 {
+  animation-duration: 2.5s;
+}
+#star-4 {
+  animation-duration: 1.5s;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .background {
