@@ -81,7 +81,7 @@
 }
 
 .train-title {
-  bottom: -10vh;
+  top: 0;
   position: absolute;
   animation: linear infinite;
   animation-name: drive;
@@ -98,8 +98,14 @@
   }
 }
 
+#train {
+  height: 100vh;
+  width: 100vw;
+}
+
 #title {
   position: relative;
+  left: 20vw;
   top: -20vh;
   font-family: "Bebas Neue", cursive;
   filter: drop-shadow(0 0 0.75rem #fff6da);
