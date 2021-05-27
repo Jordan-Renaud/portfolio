@@ -25,7 +25,7 @@ var tween = new TimelineMax().add([
     ".parallax-background #mid-building-img",
     1,
     { left: 80 },
-    { left: -100, ease: Linear.easeNone }
+    { left: -80, ease: Linear.easeNone }
   ),
 ]);
 

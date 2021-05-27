@@ -104,8 +104,6 @@ html {
   width: 100vw;
   height: 100vh;
   display: block;
-
-  /*parallex stuff*/
 }
 
 #mid-building-img {
@@ -182,11 +180,39 @@ body {
 
 .content-section {
   background-color: #373b7e;
+  height: 60vh;
 }
 
 .content-section p {
   margin: 0;
-  font-family: "Bebas Neue", cursive;
+  font-family: "pixel-5x5";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
+
+.paragraph-container {
+  border: 0.5rem solid black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  width: 60vw;
+  text-align: center;
+  background-color: #696c9a;
+  box-shadow: 1rem -1rem #070b34, 1rem 0 #070b34;
+}
+
+@font-face {
+  font-family: "pixel-5x5";
+  src: url("font/pixel-5x5.eot");
+  src: url("font/pixel-5x5.eot?#iefix") format("embedded-opentype"),
+    url("font/pixel-5x5.woff2") format("woff2"),
+    url("font/pixel-5x5.woff") format("woff"),
+    url("font/pixel-5x5.svg#pixel-5x5") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 .projects {
