@@ -26,52 +26,91 @@
       <header id="trigger">
         <nav id="navbar">
           <div class="closed" id="menu">
-            <a href="#projects">Projects</a>
-            <a href="#projects">Contact Me</a>
+            <div class="nav-link">
+              <a href="#about-me">About Me</a>
+            </div>
+            <div class="nav-link">
+              <a href="#projects">Projects</a>
+            </div>
+            <div class="nav-link">
+              <a href="#contact-me">Contact Me</a>
+            </div>
           </div>
-          <input type="image" id="menu-button" src="src/menu_bar.png" />
+          <input
+            type="image"
+            id="menu-button"
+            src="src/imgs/background/menu_bar.png"
+          />
         </nav>
       </header>
       <div class="stars">
-        <img id="star-1" class="star" src="src/star_group_1.png" alt="" />
-        <img id="star-2" class="star" src="src/star_group_2.png" alt="" />
-        <img id="star-3" class="star" src="src/star_group_3.png" alt="" />
-        <img id="star-4" class="star" src="src/star_group_4.png" alt="" />
+        <img
+          id="star-1"
+          class="star"
+          src="src/imgs/background/stars/star_group_1.png"
+          alt=""
+        />
+        <img
+          id="star-2"
+          class="star"
+          src="src/imgs/background/stars/star_group_2.png"
+          alt=""
+        />
+        <img
+          id="star-3"
+          class="star"
+          src="src/imgs/background/stars/star_group_3.png"
+          alt=""
+        />
+        <img
+          id="star-4"
+          class="star"
+          src="src/imgs/background/stars/star_group_4.png"
+          alt=""
+        />
       </div>
       <div class="parallax-background">
         <img
           id="back-building-img"
           class="background-buildings"
-          src="src/back_buildings_and_reflection.png"
+          src="src/imgs/background/buildings/back_buildings_and_reflection.png"
           alt=""
         />
         <img
           id="mid-building-img"
           class="background-buildings"
-          src="src/mid_buildings_and_reflection.png"
+          src="src/imgs/background/buildings/mid_buildings_and_reflection.png"
           alt=""
         />
         <img
           id="front-building-img"
           class="background-buildings"
-          src="src/front_buildings_and_reflection.png"
+          src="src/imgs/background/buildings/front_buildings_and_reflection.png"
           alt=""
         />
       </div>
-      <img id="tracks-img" src="src/tracks.png" alt="" />
+      <img id="tracks-img" src="src/imgs/background/tracks.png" alt="" />
       <div class="train-title">
-        <img id="train" src="src/train.png" alt="" />
+        <img id="train" src="src/imgs/background/train.png" alt="" />
         <h1 id="title">Jordan Renaud Developer</h1>
       </div>
     </section>
-    <section id="projects">
-      <h2>Projects</h2>
+    <section id="about-me" class="content-section">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        My name is Jordan Renaud. I am a front end developer who enjoys playing
+        with creative designs to bring them to life. New Zealand born, London
+        based.
+      </p>
+    </section>
+    <section id="projects" class="content-section">
+      <h2 class="section-title">Projects</h2>
       <div class="projects">
         <div class="project">
           <a href="https://weather-app-jrenaud.netlify.app/" target="_blank"
             ><img
               class="project-img"
-              src="src/weather_app.png"
+              src="src/imgs/project-imgs/weather_app.png"
               alt="weather app"
           /></a>
         </div>
@@ -79,7 +118,7 @@
           <a href="https://codepen.io/JordanRenaud/full/GRWoEoG" target="_blank"
             ><img
               class="project-img"
-              src="src/product_page.png"
+              src="src/imgs/project-imgs/product_page.png"
               alt="Product page"
           /></a>
         </div>
@@ -88,11 +127,35 @@
           <a href="https://codepen.io/JordanRenaud/full/aMgoVp" target="_blank"
             ><img
               class="project-img"
-              src="src/technical_document_page.png"
+              src="src/imgs/project-imgs/technical_document_page.png"
               alt="technical documentation page"
           /></a>
         </div>
       </div>
+    </section>
+    <section id="contact-me" class="content-section">
+      <h2 class="section-title">Contact Me</h2>
+      <p>Check me out on:</p>
+      <a href="https://www.linkedin.com/in/jordan-renaud-064a8a167/"
+        >Linkedin</a
+      >
+      <a id="profile-link" href="https://github.com/Jordan-Renaud">Github</a>
+      <a href="https://www.freecodecamp.org/jordanrenaud">FreeCodeCamp</a>
+      <form name="contact-me" method="POST" data-netlify="true">
+        <p>Or message me here</p>
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
     </section>
     <script src="src/index.js"></script>
   </body>
