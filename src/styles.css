@@ -106,17 +106,17 @@ html {
   display: block;
 }
 
+#back-building-img {
+  left: 100px;
+  transform: translate(50px);
+  filter: blur(1px);
+}
+
 #mid-building-img {
   filter: blur(0.5px);
   top: -100vh;
-  left: 150px;
-  transform: translate(100px);
-}
-
-#back-building-img {
-  left: 300px;
-  transform: translate(50px);
-  filter: blur(1px);
+  left: 50px;
+  transform: translate(25px);
 }
 
 #front-building-img {
@@ -141,10 +141,10 @@ html {
 
 @keyframes drive {
   0% {
-    left: -100%;
+    transform: translate(-100vw);
   }
   100% {
-    left: 100%;
+    transform: translate(100vw);
   }
 }
 
@@ -260,6 +260,17 @@ body {
 
 #link-name {
   color: #fff6da;
+  animation-name: show-title;
+  animation-duration: 0.5s;
+}
+
+@keyframes show-title {
+  0% {
+    color: #696c9a;
+  }
+  100% {
+    color: #fff6da;
+  }
 }
 
 .button-animation {
@@ -268,4 +279,8 @@ body {
 .button-animation:hover {
   filter: invert(1);
   transform: scale(0.9);
+}
+
+.form-container p {
+  padding-top: 1rem;
 }
