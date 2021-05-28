@@ -35,3 +35,26 @@ var scene = new ScrollMagic.Scene({
 })
   .setTween(tween)
   .addTo(controller);
+
+//animation for contact me buttons
+const linkedinLink = document.querySelector("#linkedin");
+const githubLink = document.querySelector("#github");
+const freecodecampLink = document.querySelector("#freecodecamp");
+const linkNameLabel = document.querySelector("#link-name");
+
+function addLinkTitle(element) {
+  const linkName = element.path[0].id;
+  linkNameLabel.innerHTML = linkName.toUpperCase();
+}
+
+function clearLinkTitle(element) {
+  linkNameLabel.innerHTML = "";
+}
+
+linkedinLink.addEventListener("mouseenter", addLinkTitle);
+githubLink.addEventListener("mouseenter", addLinkTitle);
+freecodecampLink.addEventListener("mouseenter", addLinkTitle);
+
+linkedinLink.addEventListener("mouseleave", clearLinkTitle);
+githubLink.addEventListener("mouseleave", clearLinkTitle);
+freecodecampLink.addEventListener("mouseleave", clearLinkTitle);
