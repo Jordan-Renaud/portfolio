@@ -110,12 +110,12 @@ html {
   filter: blur(0.5px);
   top: -100vh;
   left: 150px;
-  transform: matrix(1.2, 0, 0, 1, 0, 0);
+  transform: translate(100px);
 }
 
 #back-building-img {
   left: 300px;
-  transform: matrix(1.3, 0, 0, 1, 0, 0);
+  transform: translate(50px);
   filter: blur(1px);
 }
 
@@ -176,6 +176,7 @@ body {
   font-size: 3rem;
   letter-spacing: 0.3rem;
   font-family: "Bebas Neue", cursive;
+  filter: drop-shadow(0 0 0.75rem #fff6da);
 }
 
 .content-section {
@@ -197,10 +198,27 @@ body {
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin: 0 auto;
-  width: 60vw;
+  width: 50vw;
   text-align: center;
   background-color: #696c9a;
-  box-shadow: 1rem -1rem #070b34, 1rem 0 #070b34;
+  box-shadow: 1rem -1rem #070b34;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+.flex-container .paragraph-container {
+  width: 20vw;
+}
+
+.flex-container .paragraph-container .subsection-title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.8rem;
 }
 
 @font-face {
@@ -228,15 +246,22 @@ body {
   width: 15vw;
   height: 8vw;
   background-color: #696c9a;
-  box-shadow: 1rem -1rem #070b34, 1rem 0 #070b34;
+  box-shadow: 1rem -1rem #070b34;
 }
 
 .project-img {
   width: 15vw;
-  transition: all 0.5s ease-in-out;
 }
 
-.project-img:hover {
+.logo-link {
+  width: 5rem;
+  padding: 1rem;
+}
+
+.button-animation {
+  transition: all 0.5s ease-in-out;
+}
+.button-animation:hover {
   filter: invert(1);
   transform: scale(0.9);
 }

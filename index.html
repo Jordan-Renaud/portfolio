@@ -23,6 +23,8 @@
 
   <body>
     <section class="background" id="welcome-section">
+
+      <!-- navigation menu -->
       <header id="trigger">
         <nav id="navbar">
           <div class="closed" id="menu">
@@ -43,6 +45,8 @@
           />
         </nav>
       </header>
+
+      <!-- background welcome page -->
       <div class="stars">
         <img
           id="star-1"
@@ -89,12 +93,16 @@
           alt=""
         />
       </div>
+
+      <!-- train -->
       <img id="tracks-img" src="src/imgs/background/tracks.png" alt="" />
       <div class="train-title">
         <img id="train" src="src/imgs/background/train.png" alt="" />
         <h1 id="title">Jordan Renaud Developer</h1>
       </div>
     </section>
+
+    <!-- ABOUT ME SECTION -->
     <section id="about-me" class="content-section">
       <h2 class="section-title">About Me</h2>
       <div class="paragraph-container">
@@ -107,13 +115,15 @@
         <p>JAVASCRIPT</p>
       </div>
     </section>
+
+    <!-- PROJECT SECTION -->
     <section id="projects" class="content-section">
       <h2 class="section-title">Projects</h2>
       <div class="projects">
         <div class="project">
           <a href="https://weather-app-jrenaud.netlify.app/" target="_blank"
             ><img
-              class="project-img"
+              class="project-img button-animation"
               src="src/imgs/project-imgs/weather_app.png"
               alt="weather app"
           /></a>
@@ -121,7 +131,7 @@
         <div class="project">
           <a href="https://codepen.io/JordanRenaud/full/GRWoEoG" target="_blank"
             ><img
-              class="project-img"
+              class="project-img button-animation"
               src="src/imgs/project-imgs/product_page.png"
               alt="Product page"
           /></a>
@@ -130,36 +140,47 @@
         <div class="project">
           <a href="https://codepen.io/JordanRenaud/full/aMgoVp" target="_blank"
             ><img
-              class="project-img"
+              class="project-img button-animation"
               src="src/imgs/project-imgs/technical_document_page.png"
               alt="technical documentation page"
           /></a>
         </div>
       </div>
     </section>
+
+    <!-- CONTACT ME SECTION -->
     <section id="contact-me" class="content-section">
       <h2 class="section-title">Contact Me</h2>
-      <p>Check me out on:</p>
-      <a href="https://www.linkedin.com/in/jordan-renaud-064a8a167/"
-        >Linkedin</a
-      >
-      <a id="profile-link" href="https://github.com/Jordan-Renaud">Github</a>
-      <a href="https://www.freecodecamp.org/jordanrenaud">FreeCodeCamp</a>
-      <form name="contact-me" method="POST" data-netlify="true">
-        <p>Or message me here</p>
-        <p>
-          <label>Your Name: <input type="text" name="name" /></label>
-        </p>
-        <p>
-          <label>Your Email: <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
+      <div class="flex-container">
+        <div class="paragraph-container">
+          <h3 class="subsection-title">CHECK ME OUT ON:</h3>
+          <a href="https://www.linkedin.com/in/jordan-renaud-064a8a167/"
+            ><img class="logo-link button-animation" src="src/imgs/logos/linkedin.png" alt="linkedin logo" title="linkedin"></a
+          >
+          <a id="profile-link" href="https://github.com/Jordan-Renaud"
+            ><img class="logo-link button-animation" src="src/imgs/logos/github.png" alt="github logo" title="github"></a
+          >
+          <a href="https://www.freecodecamp.org/jordanrenaud"><img class="logo-link button-animation" src="src/imgs/logos/freecodecamp.png" alt="freecodecamp logo" title="freecodecamp"></a>
+          </div>
+          <div class="paragraph-container">
+            <form name="contact-me" method="POST" data-netlify="true">
+              <h3 class="subsection-title">OR MESSAGE ME HERE:</h3>
+              <p>
+                <label>YOUR NAME <input type="text" name="name" /></label>
+              </p>
+              <p>
+                <label>YOUR EMAIL <input type="email" name="email" /></label>
+              </p>
+              <p>
+                <label>MESSAGE <textarea name="message"></textarea></label>
+              </p>
+              <p>
+                <button type="submit">Send</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
     <script src="src/index.js"></script>
   </body>
