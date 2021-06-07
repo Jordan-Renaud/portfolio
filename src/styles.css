@@ -25,7 +25,6 @@ body {
   display: inline;
   height: 1.5rem;
   width: 10rem;
-  background-color: yellow;
 }
 
 #navbar a {
@@ -39,6 +38,7 @@ body {
 #navbar a:hover {
   font-size: 1.3rem;
   box-shadow: 0.2rem -0.2rem #373b7e, 0.2rem 0 #373b7e;
+  cursor: pointer;
 }
 
 #navbar input {
@@ -170,7 +170,7 @@ body {
 
 .section-title {
   margin: 0;
-  padding: 3rem;
+  padding: 4rem;
   text-align: center;
   font-size: 3rem;
   letter-spacing: 0.3rem;
@@ -180,7 +180,7 @@ body {
 
 .content-section {
   background-color: #373b7e;
-  padding-bottom: 10rem;
+  padding-bottom: 7rem;
 }
 
 .content-section p {
@@ -277,6 +277,7 @@ body {
 .button-animation:hover {
   filter: invert(1);
   transform: scale(0.9);
+  cursor: pointer;
 }
 
 #contact-me .paragraph-container {
